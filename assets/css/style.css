@@ -1,200 +1,222 @@
-/* root styles that can be used throughout the project */
-:root {
-    --black: #000000;
-    --white: #ffffff;
-    --grey: #88888a;
-}
+/* import google fonts below - TODO */
 
-/* general styles */
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
-}
-
-/* determines the color and decoration of all anchor elements within the page */
-a {
-    color: var(--white);
-    text-decoration: none;
-}
-
-/* provides styling to all paragraphs on the site */
-p {
-    font-size: 20px;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    color: var(--white);
 }
 
-/* styles the text within the navigation menu within the header */
-header nav {
-    margin-bottom: 10px;
-    padding-top: -50px;
-    margin-left: 20px;
-    margin-right: 50px;
-    float: left;
-    flex-wrap: wrap;
-    display: flex;
-    font-family: 'Raleway', sans-serif;
-    position: sticky;
+/* styles the body */
+body {
+    background: rgba(127, 127, 237, 0.4)
+}
+
+/* styles the start button div class */
+.start_button,
+.information_box,
+.quizbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* styles the actual start button within the start button div */
+.start_button button {
     font-size: 25px;
+    font-weight: 500;
+    color: rgba(127, 127, 237, 0.4);
+    padding: 15px, 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
 }
 
-/* style affecting header */
-header {
-    padding: 10px;
-    float: left;
-    width: 25%;
-    margin: 5%;
-    font-family: 'Raleway', sans-serif;
-    background-color: var(--grey);
-    color: var(--black);
-    border-style: ridge;
-    border-color: var(--black);
-    flex-wrap: wrap;
+/* styles information box div class that contains rules and exit/continue buttons */
+.information_box {
+    display: none;
+    width: 540px;
+    background: white;
+    border-radius: 5px;
+
+}
+
+/* styles information box div class and information title div class */
+.information_box .information_title {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
     display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 300;
+
 }
 
-/* style the h1 of header */
-header h1 {
-    margin-left: 20px;
-    display: inline-block;
-    font-size: 48px;
-    color: var(--white);
+/* styles the information box div class and the information list div class */
+.information_box .information_list {
+    padding: 15px 35px;
+}
+
+/* styles the information div within the info list inside the info box */
+.information_box .information_list .information {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+/* styles the span element within the information div */
+.information_box .information_list .information span {
+    font-weight: 600;
+    color: red;
+}
+
+/* styles the div that contains the buttons within the information box div */
+.information_box .navigation_buttons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1 px solid lightgray;
+
+}
+
+/* styles the actual buttons within the buttons div */
+.information_box .navigation_buttons button {
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid re;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/*styles specifically the quit button */
+.navigation_buttons button.quit {
+    color: rebeccapurple;
+    border-color: rebeccapurple;
+    background: lightblue;
+}
+
+/* provides hover styling to the quit button */
+.navigation_buttons button.quit:hover {
+    background: darkblue;
+}
+
+/*styles specifically the continue button */
+.navigation_buttons button.continue {
+    color: rebeccapurple;
+    background-color: bisque;
+    border-color: rebeccapurple;
+}
+
+/* provides hover styling to the continue button */
+.navigation_buttons button.continue:hover {
+    background: darkblue;
+}
+
+/* provides styling to the quiz box div that contains the quiz questions */
+.quizbox {
+    width: 550px;
+    background: white;
+    border-radius: 5px;
+}
+
+/* provides styling to the header section of the quizbox div */
+.quizbox header {
+    position: relative;
+    z-index: 99;
+    height: 70px;
+    padding: 0 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* provides thin shadow below header element */
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1)
+}
+
+/* provides styling to the title within the header section */
+.quizbox header .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* provides styling to the timer within the header section */
+.quizbox header .timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    background: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+
+/* provides styling to the timer text within the header section */
+.quizbox header .timer .time_text {
     font-weight: 400;
-    flex-wrap: wrap;
-    display: flex;
-    position: sticky;
+    font-size: 17px;
+    user-select: none;
 }
 
-/* determines style of list element in the header */
-header nav ul li {
+/* provides styling to the timer numbers within the header section */
+.quizbox header .timer .time_sec {
+    font-weight: 400;
+    font-size: 18px;
+    background: lightgreen;
+    height: 30px;
+    width: 45px;
+    color: darkgreen;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid darkgreen;
+    user-select: none;
+}
+
+/* styles the section within the quiz box div */
+.quizbox section {
+    padding: 25px 30px 20px 30px;
+    background: white;
+}
+
+/* styles the section within the quiz box div that contains the question text */
+.quizbox section .que_text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* styles the div that contains the answer options within the quiz box dive */
+.quizbox section .option_list {
+    padding: 20px 0;
     display: block;
 }
 
-/* styles the image in the header */
-.profile {
-    height: 200px;
-    width: 200px;
-    position: relative;
-    flex-wrap: wrap;
+/* styles the actual answer options */
+.quizbox section .option_list .option {
+    background: aliceblue;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    font-size: 17px;
     display: flex;
-    margin-left: 60px;
-    margin: 25px;
-    background-size: cover;
-    background-image: url("../images/Professional-Photo.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 75%;
-    border-style: ridge;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
-/* style affecting body */
-body {
-    background-color: var(--white);
-    background-attachment: scroll;
-}
-
-/* determines the style of the background */
-.background {
-    height: 1000px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/Boxes.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-}
-
-/* determines styling of main section of the page */
-.content {
-    width: 75%;
-    display: contents;
-    margin-left: 20px;
-    column-count: 3;
-}
-
-/* styles the main engineering projects section on the page */
-.engineering-projects {
-    border-style: ridge;
-    border-width: 100%;
-    border-color: var(--black);
-    flex-wrap: wrap;
-    display: flex;
-    margin: auto;
-    width: 95%;
-    margin-bottom: 25px;
-    padding: 70px;
-    height: 450px;
-    font-family: 'Raleway', sans-serif;
-    background-color: var(--grey);
-    color: var(--white);
-
-}
-
-/* styles the about me and contact me sections on the page */
-.about-contact-me {
-    border-style: ridge;
-    border-width: 100%;
-    border-color: var(--black);
-    flex-wrap: wrap;
-    display: flex;
-    float: right;
-    width: 49%;
-    margin-bottom: 20px;
-    padding: 25px;
-    height: 300px;
-    background-color: var(--grey);
-    color: var(--white);
-}
-
-/* styles the art projects and other engineering projects sections on the page */
-.fine-art-projects,
-.TBD {
-    border-style: ridge;
-    border-width: 100%;
-    border-color: var(--black);
-    flex-wrap: wrap;
-    display: flex;
-    float: left;
-    width: 49%;
-    margin-bottom: 20px;
-    padding: 25px;
-    height: 300px;
-    font-family: 'Raleway', sans-serif;
-    background-color: var(--grey);
-    color: var(--white);
-}
-
-/* styles the image icon in the main engineering projects box */
-.engineering-projects img, .TBD img {
-    max-height: 100px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 5px;
-    margin-top: 10px;
-}
-
-/* determines style of h2 in each of the listed sections */
-.engineering-projects h2,
-.fine-art-projects h2,
-.about-contact-me h2,
-.TBD h2 {
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 36px;
-    font-family: 'Raleway', sans-serif;
-}
-
-/* determines style of footer */
-footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-}
-
-/* styles h2 of the footer */
-footer h2 {
-    font-size: 20px;
+.option_list .option:last-child {
+    margin-bottom: 0px;
 }
