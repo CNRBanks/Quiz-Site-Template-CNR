@@ -28,7 +28,8 @@ body {
 
 /* information box styling for js */
 .info_box.activeInfo,
-.quizbox.activeQuiz {
+.quizbox.activeQuiz,
+.result_box.activeResult {
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -204,6 +205,14 @@ body {
     user-select: none;
 }
 
+.quizbox header .time_line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background-color: rebeccapurple;
+}
+
 /* styles the section within the quiz box div */
 .quizbox section {
     padding: 25px 30px 20px 30px;
@@ -276,6 +285,25 @@ section .option_list .option:hover{
     background: salmon;
 }
 
+/* styles the color of the option when it is correct  */
+.option_list .option.correct {
+    color: green;
+    border-color: lightgreen;
+    background: yellowgreen;
+}
+
+/* styles the color of the option when it is incorrect  */
+.option_list .option.incorrect {
+    color: red;
+    border-color: lightsalmon;
+    background: salmon;
+}
+
+/* styles disabled options  */
+.option_list .option.disabled {
+    pointer-events: none;
+}
+
 /* styles the footer container */
 .quizbox footer {
     height: 60px;
@@ -305,6 +333,7 @@ footer .total_que span p {
 
 /* styles the next button in the footer */
 footer .next_btn{
+    display: none;
     height: 40px;
     padding: 0 13px;
     font-size: 18px;
