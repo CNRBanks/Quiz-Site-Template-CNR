@@ -7,7 +7,8 @@
     <title>Connor Banks' Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Raleway:wght@100;400;500;600&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Raleway:wght@100;400;500;600&display=swap"
         rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
 </head>
@@ -17,7 +18,7 @@
     <div class="start_button"><button>Begin Quiz</button></div>
 
     <!-- Information Box -->
-    <div class="information_box">
+    <div class="info_box">
         <div class="information_title">
             <span>List Rules of this Quiz</span>
         </div>
@@ -28,11 +29,12 @@
             <div class="information"> 4. You can't exit from the quiz while you're playing</div>
             <div class="information"> 5. You'll get points on the basis of your correct answers</div>
         </div>
-        <div class="navigation_buttons">
+        <div class="buttons">
             <button class="quit">Quit Quiz</button>
-            <button class="continue">Continue</button>
+            <button class="restart">Continue</button>
         </div>
     </div>
+    
 
     <!-- Quiz Box -->
     <div class="quizbox">
@@ -50,30 +52,52 @@
             <div class="option_list">
                 <div class="option">
                     <span>Option one here</span>
-                    <div class="icon"><i class="fas fa-check"></i></div>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
                 </div>
                 <div class="option">
                     <span>Option two here</span>
-                    <div class="icon"><i class="fas fa-times"></i></div>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
                 </div>
                 <div class="option">
                     <span>Option three here</span>
-                    <div class="icon"><i class="fas fa-check"></i></div>
+
                 </div>
                 <div class="option">
                     <span>Option four here</span>
-                    <div class="icon"><i class="fas fa-check"></i></div>
+
                 </div>
             </div>
         </section>
-    <!-- Quiz Box Footer -->
-    <footer>
-        <div class="total_que">
-            <span><p>2</p>Of<p>5</p>Questions</span>
-        </div>
-        <button class="next_btn">Next</button>
-    </footer>
+        <!-- Quiz Box Footer -->
+        <footer>
+            <div class="total_que">
+                <span>
+                    <p>2</p>of<p>5</p>Questions
+                </span>
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
     </div>
+
+    <!-- Results Box  -->
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Congratulations, you've completed the quiz!</div>
+        <div class="score_text">
+            <span>Sorry, it looks like you only got <p>2</p> out of <p>5</p></span>
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
+    
 
 </body>
 
