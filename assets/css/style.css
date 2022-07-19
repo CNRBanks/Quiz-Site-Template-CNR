@@ -1,4 +1,8 @@
 /* import google fonts below - TODO */
+:root { 
+    --purple: rgba(127, 127, 237, 0.4);
+    --red: red;
+}
 
 * {
     margin: 0;
@@ -9,7 +13,7 @@
 
 /* styles the body */
 body {
-    background: rgba(127, 127, 237, 0.4)
+    background: var(--purple);
 }
 
 /* styles the start button div class */

@@ -5,21 +5,21 @@ let questions = [
         question: "What does HTML stand for?",
         answer: "Hyper Text Markup Language",
         options: [
-            "Hotdog Tamale Meat Leather",
-            "Hiroshima Tanzania Montreal Latte",
-            "Hot Tan Milfs Letsgo",
+            "Option one",
+            "Option two",
+            "Option three",
             "Hyper Text Markup Language"
         ]
     },
     {
         numb: 2,
-        question: "What does my mom stand for?",
-        answer: "the truth",
+        question: "What answer is first?",
+        answer: "option one",
         options: [
-            "the truth",
-            "gay stuff",
-            "idk",
-            "Hyper Text Markup Language"
+            "option one",
+            "option two",
+            "option three",
+            "option four"
 
         ]
     },
@@ -28,10 +28,10 @@ let questions = [
         question: "What does SQL stand for?",
         answer: "Structured Query Language",
         options: [
-            "Seditious Queef Lance",
-            "Surly Queer Ladies",
+            "Option one",
+            "Option two",
             "Structured Query Language",
-            "Spiralized Quail Latke"
+            "Option three"
 
         ]
     },
@@ -40,22 +40,22 @@ let questions = [
         question: "What does CSS stand for?",
         answer: "Cascading Style Sheets",
         options: [
-            "Connor Sucks Socks",
+            "Option one",
             "Cascading Style Sheets",
-            "Caribbean Succulent Solids",
-            "Crappy Soggy Sinuses"
+            "Option two",
+            "Option three"
 
         ]
     },
     {
         numb: 5,
-        question: "What does my mom stand for?",
-        answer: "the truth",
+        question: "Which option is first?",
+        answer: "option one",
         options: [
-            "the truth",
-            "gay stuff",
-            "idk",
-            "Hyper Text Markup Language"
+            "option one",
+            "option two",
+            "option three",
+            "option four"
 
         ]
     },
