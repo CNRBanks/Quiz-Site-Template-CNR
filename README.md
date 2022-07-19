@@ -15,9 +15,9 @@ CSS tutorials from W3Schools https://my-learning.w3schools.com/tutorial/css
 
 HTML tutorials from W3Schools https://my-learning.w3schools.com/tutorial/html
 
-Quiz Template Tutorial A :  part one https://www.youtube.com/watch?v=pQr4O1OITJo
+Quiz Template Tutorial A : part one https://www.youtube.com/watch?v=pQr4O1OITJo
 
-                            part two - https://www.youtube.com/watch?v=WUBhpSRS_fk
+Quiz Template Tutorial A : part two https://www.youtube.com/watch?v=WUBhpSRS_fk
 
 Quiz Template Tutorial B : https://www.youtube.com/watch?v=riDzcEQbX6k
 
